@@ -76,7 +76,7 @@ import {
             <CardTitle className="font-bold text-lg">Storages</CardTitle>
             <CardContent className="p-0 flex flex-col gap-2">
                 <div className="flex items-center flex-wrap gap-2">
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Storage</span>
                         <Select>
                             <SelectTrigger className="w-full">
@@ -94,15 +94,15 @@ import {
                             </SelectContent>
                         </Select>
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Quantity</span>
                         <Input type="number" />
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Price</span>
                         <Input type="number" />
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Currency</span>
                         <Select>
                             <SelectTrigger className="w-full">
@@ -121,7 +121,7 @@ import {
                         </Select>
                     </div>
                 </div>
-                <Button variant="destructive" className="w-[215px]">
+                <Button variant="destructive" className="min-w-[200px] w-[200px]">
                     <Trash2Icon size={15} />
                 </Button>
                 <Button className="w-full">
@@ -137,19 +137,19 @@ import {
           </CardHeader>
           <CardContent className="flex flex-col gap-2">
                 <div className="flex items-center flex-wrap gap-2">
-                <   div className="min-w-[215px]">
+                <   div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Invoice Number</span>
                         <Input placeholder="Invoice Number" />
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Quantity</span>
                         <Input type="number" />
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Price</span>
                         <Input type="number" />
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Currency</span>
                         <Select>
                             <SelectTrigger className="w-full">
@@ -167,7 +167,7 @@ import {
                             </SelectContent>
                         </Select>
                     </div>
-                    <div className="min-w-[215px]">
+                    <div className="min-w-[200px] w-[200px]">
                         <span className="text-sm">Retailer</span>
                         <Select>
                             <SelectTrigger className="w-full">
@@ -185,14 +185,14 @@ import {
                             </SelectContent>
                         </Select>
                     </div>
-                    <div className="m-w-[215px] flex flex-col">
+                    <div className="m-min-w-[200px] w-[200px] flex flex-col">
                         <span className="text-sm">Date</span>
                         <Popover>
                             <PopoverTrigger asChild>
                             <Button
                                 variant={"outline"}
                                 className={cn(
-                                    "w-[215px] justify-start text-left font-normal",
+                                    "min-w-[200px] w-[200px] justify-start text-left font-normal",
                                     !date && "text-muted-foreground"
                                 )}
                                 >
@@ -202,16 +202,16 @@ import {
                             </PopoverTrigger>
                             <PopoverContent className="w-auto p-0">
                                 <Calendar
-                                mode="single"
-                                selected={date}
-                                onSelect={setDate}
-                                initialFocus
+                                    mode="single"
+                                    selected={date}
+                                    onSelect={setDate}
+                                    initialFocus
                                 />
                             </PopoverContent>
                         </Popover>
                     </div>
                 </div>
-                <Button variant="destructive" className="w-[215px]">
+                <Button variant="destructive" className="min-w-[200px] w-[200px]">
                     <Trash2Icon size={15} />
                 </Button>
                 <Button className="w-full">
