@@ -159,8 +159,8 @@ export const FirstSection = forwardRef(function FirstSection(props, ref) {
                         aria-expanded={open}
                         className="w-[200px] justify-between font-normal"
                         >
-                        {value
-                            ? frameworks.find((framework) => framework.value === value)?.label
+                        {category
+                            ? frameworks.find((framework) => framework.value === category)?.label
                             : "Select Category"}
                         <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                         </Button>
